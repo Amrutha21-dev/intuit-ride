@@ -9,7 +9,7 @@ import org.hibernate.envers.Audited;
 @Entity
 @Getter
 @Setter
-@Table(name = "user")
+@Table(name = "users")
 @NoArgsConstructor
 @AllArgsConstructor
 @Audited
