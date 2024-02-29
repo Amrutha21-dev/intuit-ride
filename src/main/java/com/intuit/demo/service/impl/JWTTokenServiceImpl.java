@@ -28,7 +28,7 @@ public class JWTTokenServiceImpl implements JWTTokenService {
     public String createJWTToken(Long id, String role,ZonedDateTime creationDate) {
         return Jwts.builder().setSubject(role)
                 .setId(id.toString())
-                .setExpiration(Date.from(creationDate.plusDays(30).toInstant()))
+                .setExpiration(Date.from(creationDate.plusDays(1).toInstant()))
                 .setIssuedAt(Date.from(creationDate.toInstant()))
                 .signWith(key).compact();
     }

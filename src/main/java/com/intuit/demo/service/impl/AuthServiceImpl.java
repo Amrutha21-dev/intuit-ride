@@ -309,7 +309,7 @@ public class AuthServiceImpl implements AuthService {
         userRefreshTokenEntity.setRefreshToken(randomUUID);
         userRefreshTokenEntity.setRefreshTokenGeneratedAt(creationDate);
         userRefreshTokenEntity.setUserRefreshTokenStatus(UserRefreshTokenStatus.ACTIVE);
-        long refreshTokenExpireDay = 1L;
+        long refreshTokenExpireDay = 2L;
 
         userRefreshTokenEntity.setRefreshTokenExpiresAt(creationDate.plusDays(refreshTokenExpireDay));
         userRefreshTokenRepository.save(userRefreshTokenEntity);
