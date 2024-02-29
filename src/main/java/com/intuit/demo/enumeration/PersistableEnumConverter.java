@@ -1,7 +1,6 @@
 package com.intuit.demo.enumeration;
 
 
-import com.intuit.demo.enumeration.PersistableEnum;
 import jakarta.persistence.AttributeConverter;
 import lombok.AllArgsConstructor;
 

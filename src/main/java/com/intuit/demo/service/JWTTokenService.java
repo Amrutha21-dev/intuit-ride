@@ -6,7 +6,7 @@ import java.time.ZonedDateTime;
 
 public interface JWTTokenService {
 
-    public String createJWTToken(Long id, String role,ZonedDateTime creationDate);
+    String createJWTToken(Long id, String role,ZonedDateTime creationDate);
 
-    public JWTParametersModel decodeJWTToken(String jwtToken);
+    JWTParametersModel decodeJWTToken(String jwtToken);
 }

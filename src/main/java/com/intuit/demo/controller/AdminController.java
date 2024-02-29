@@ -1,13 +1,9 @@
 package com.intuit.demo.controller;
 
-import com.intuit.demo.constant.AppConstant;
-import com.intuit.demo.model.request.DriverRequestModel;
 import com.intuit.demo.model.request.DriverStatusRequestModel;
 import com.intuit.demo.model.response.APIResponse;
-import com.intuit.demo.model.response.DriverResponseModel;
 import com.intuit.demo.model.response.DriverStatusResponseModel;
 import com.intuit.demo.service.AdminService;
-import com.intuit.demo.service.DriverService;
 import com.intuit.demo.util.APIResponseUtil;
 import jakarta.validation.Valid;
 import lombok.extern.slf4j.Slf4j;

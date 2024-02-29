@@ -38,24 +38,4 @@ public class APIResponseUtil {
         return apiResponse;
     }
 
-    public static <K extends ResponseBaseModel> APIResponse<K> createRateLimitErrorResponse() {
-        APIResponse<K> apiResponse = new APIResponse<>();
-        apiResponse.setStatus(HttpStatus.TOO_MANY_REQUESTS.value());
-        apiResponse.setMessage(HttpStatus.TOO_MANY_REQUESTS.getReasonPhrase());
-        return apiResponse;
-    }
-
-    public static <K extends ResponseBaseModel> APIResponse<K> createTimeoutErrorResponse(String message) {
-        APIResponse<K> apiResponse = new APIResponse<>();
-        apiResponse.setStatus(HttpStatus.GATEWAY_TIMEOUT.value());
-        apiResponse.setMessage(message);
-        return apiResponse;
-    }
-
-    public static <K extends ResponseBaseModel> APIResponse<K> createServiceUnavailableErrorResponse(String message) {
-        APIResponse<K> apiResponse = new APIResponse<>();
-        apiResponse.setStatus(HttpStatus.SERVICE_UNAVAILABLE.value());
-        apiResponse.setMessage(message);
-        return apiResponse;
-    }
 }
